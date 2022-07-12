@@ -42,10 +42,17 @@
         <li>Sampling from the true posterior based on the noisy statistic. </li>
     </ul>
     <h2>Statistic selection based on Fisher Information</h2>
-    <img src="privacy_settings.png" class="center">
+    <figure>
+        <img src="privacy_settings.png" width="100" height="200" class="center">
+        <figcaption>Graphical representations of the models respected
+            in the F(θ) calculations and MCMC algorithms.</figcaption>
+    </figure>
     <dl>
-        <dt>FIM with additive statistic and Gaussian noise</dt>
+        <dt>(1)FIM with additive statistic and Gaussian noise</dt>
         <dd>-Additive statistic \(S_n(X_{1:n})=\frac{1}{n}\sum s(X_i)\)</dd>
+        <dd>-Gaussian noise </dd>
+        <dd><b>-Results for \(\mathcal{N}(\theta,1)\):</b></dd>
+        <dd><img src="Normal_mean_A_10_n_100_eps_Inf.png" width="100" height="200" class="center"></dd>
     </dl>
     <h3>Bayesian Inference using MCMC</h3>
 </body>
