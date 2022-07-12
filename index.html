@@ -4,11 +4,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=h, initial-scale=1.0">
     <title>Document</title>
-    <script type="text/x-mathjax-config">
-        MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}});
-    </script>
-    <script type="text/javascript"
-      src="http://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async
+          src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
     </script>
     <style>
      .img{
@@ -40,7 +38,7 @@
     <h2>Statistic selection based on Fisher Information</h2>
     <dl>
         <dt>FIM with additive statistic and Gaussian noise</dt>
-        <dd>-Additive statistic $S_n{X_1:n}=frac{1}{n}sum s(X_i)$</dd>
+        <dd>-Additive statistic \(S_n{X_1:n}=\frac{1}{n}\sum s(X_i)\)</dd>
     </dl>
     <h3>Bayesian Inference using MCMC</h3>
 </body>
