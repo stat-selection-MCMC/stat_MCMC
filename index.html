@@ -3,6 +3,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=h, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/katex.min.css" integrity="sha384-zB1R0rpPzHqg7Kpt0Aljp8JPLqbXI3bhnPWROx27a9N0Ll6ZP/+DiW/UqRcLbRjq" crossorigin="anonymous">
     <title>Document</title>
     <style>
      .img{
@@ -24,12 +25,18 @@
         <li><b>Principle Investigator:</b> Sinan Yıldırım</li>
         <li><b>Project Type:</b> TUBITAK 3501</li>
       </ul> 
-    <p><b>Main work of the project:</b> Differentially private Bayesian estimation of the parameters of a population distribution, when a noisy statistic of a sample from that population is shared.</p>
+    <p><b>Target of the project:</b> Differentially private Bayesian estimation of the parameters of a population distribution, when a noisy statistic of a sample from that population is shared.</p>
     <p>This work mainly addresses two problems: (1) What statistic of the sample should be shared privately? For the first question, i.e., the one about statistic selection, we promote using the Fisher information. We find out that, the statistic that is most informative in a non-privacy setting may not be the optimal choice under the privacy restrictions. We provide several examples to support that point. We consider several types of data sharing settings and propose several Monte Carlo-based numerical estimation methods for calculating the Fisher information for those settings. The second question concerns inference: (2) Based on the shared statistics, how could we perform effective Bayesian inference?</p>
     <p><b>Main contributions:</b></p>
     <ul>
         <li>Statistic selection based on Fisher Information. </li>
         <li>Sampling from the true posterior based on the noisy statistic. </li>
     </ul>
+    <h2>Statistic selection based on Fisher Information</h2>
+    <dl>
+        <dt>FIM with additive statistic and Gaussian noise</dt>
+        <dd>-Additive statistic \( S_n{X_1:n}=frac{1}{n}sum s(X_i)\)</dd>
+    </dl>
+    <h3>Bayesian Inference using MCMC</h3>
 </body>
 </html>
