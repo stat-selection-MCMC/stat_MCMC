@@ -18,8 +18,10 @@
      .body {
     font-family: 'Times New Roman', Times, serif; 
     }
-    .row {
-      display: block;
+    .row::after {
+    content: "";
+    clear: both;
+    display: table;
     }
     </style>
 </head>
@@ -27,6 +29,8 @@
     <div class="row">
         <div class="column">
           <img src="Sabanci_University_logo.png">
+        </div>
+        <div class="column">
           <img src="tubitak_logo.png">
         </div>
       </div>
