@@ -46,7 +46,7 @@
     <p><b>Main contributions:</b></p>
         <ul>
             <li>Statistic selection based on Fisher Information. </li>
-            <li>Sampling from the true posterior based on the noisy statistic. </li>
+            <li>Sampling from the true posterior based on the noisy statistic (Bayesian Inference using MCMC). </li>
         </ul>
     <p>This work mainly addresses two problems: (1) What statistic of the sample should be shared privately? 
         For the first question, i.e., the one about statistic selection, we promote using the Fisher information. 
@@ -66,20 +66,42 @@
         <dd>-Gaussian noise </dd>
         <dt>(2) FIM with additive statistic and non-Gaussian noise</dt>
         <dd>-Additive statistic \(S_n(X_{1:n})=\frac{1}{n}\sum s(X_i)\)</dd>
-        <dd>-non-Gaussian noise(Laplace) </dd>
+        <dd>-non-Gaussian noise (Laplace) </dd>
         <dt>(3) FIM with non-additive statistic and non-Gaussian noise</dt>
-        <dd>-non-additive statistic \(S_n(X_{1:n})=\text{max}(s(X_i))\) or \(S_n(X_{1:n})=\text{median}(s(X_i))\)</dd>
-        <dd>-non-Gaussian noise(Laplace) </dd>
+        <dd>-Non-additive statistic \(S_n(X_{1:n})=\text{max}(s(X_i))\) or \(S_n(X_{1:n})=\text{median}(s(X_i))\)</dd>
+        <dd>-Non-Gaussian noise (Laplace) </dd>
         <dt>(4) FIM with sequential release</dt>
         <dd>-Instead of a summary statistic, sequential release is employed</dd>
-        <dd>-non-Gaussian noise(Laplace) </dd>
+        <dd>-Non-Gaussian noise (Laplace) </dd>
     </dl>
-    <h3>Bayesian Inference using MCMC</h3>
+    <p><b>Bayesian Inference using MCMC</b></p>
     MCMC algorithms used in the project
     <ul>
         <li><b>Simple Metropolis-Hastings(MH)</li>
-        <li><b>Pseudo-Marginal MH</b></li>
-        <li><b>MH with Averaged Acceptance Ratios</b></li>
+        <li><b>Pseudo-Marginal MH (PMMH)</b></li>
+        <li><b>MH with Averaged Acceptance Ratios (MHAAR)</b></li>
     </ul>
+    Algorithm model matching for Differentially Private Bayesian Inference with MCMC
+    <table>
+        <tr>
+          <th>Model</th>
+          <th>Algorithm</th>
+        </tr>
+        <tr>
+          <td>Additive statistic, Gaussian noise</td>
+          <td>MH (Algorithm 4)</td>
+        <tr>
+            <td>Additive statistic, non-Gaussian noise</td>
+            <td>PMMH (Algorithm 5), MHAAR (Algorithm 6)</td>
+        </tr>
+        <tr>
+            <td>Non-additive statistic</td>
+            <td>MHAAR (Algorithm 7)</td>
+        </tr>
+        <tr>
+          <td>Sequential release</td>
+          <td>MHAAR (Algorithm 8)</td>
+        </tr>
+      </table>
 </body>
 </html>
